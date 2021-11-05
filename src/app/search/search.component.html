@@ -1,0 +1,9 @@
+<form [formGroup]="searchForm">
+  <br>
+  <input formControlName="search" type="text" class="list-group-item search-box" [value]="searchValue" ngxTypeahead [taList]="DataRecard.data" [taItemTpl]="myTemp" (taSelected)="selectedTempStatic($event)">
+  <ng-template #myTemp let-item>
+    <div class="item-name">
+      {{item.result[DisplayField]}}
+    </div>
+  </ng-template>
+</form>

@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+.ta-results.list-group{
+    max-width: 400px;
+    overflow: auto;
+    max-height: 75vh;
+    border: 1px solid #ccc;
+}
+.typeahead-wrap .list-group-item {    
+    width:100%;
+    text-align: left;
+    position: relative;
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.typeahead-wrap .list-group-item{
+    width:100%;
+    text-align: left;
+}
+.typeahead-wrap .list-group-item.active{
+    background-color: #ccc;
+}
+
+.typeahead-wrap .list-group-item .item-name {
+    font-weight: bold;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
